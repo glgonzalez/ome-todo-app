@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, lazy } from 'react';
 import { TasksProvider } from 'contexts/tasks-context';
 import { TaskList } from 'components/task-list';
 import { AddTask } from 'components/add-task';
@@ -7,10 +7,12 @@ import {
   Container, 
   Toolbar, 
   Typography, 
-  Theme, 
-  createStyles, 
-  makeStyles 
+  Theme
 } from '@material-ui/core';
+import { 
+  createStyles,
+  makeStyles
+} from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 

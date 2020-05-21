@@ -1,23 +1,22 @@
 import React, { FC } from 'react';
 import { 
   Button,
-  Card,
-  CardActions,
-  CardContent,
   ExpansionPanel,
   ExpansionPanelActions,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
   Theme,
-  Typography,
+  Typography
+} from '@material-ui/core';
+import { 
   createStyles,
   makeStyles
-} from '@material-ui/core';
+} from '@material-ui/core/styles';
 import { ExpandMore } from '@material-ui/icons';
 import { Task, useTasksContext } from 'contexts/tasks-context';
 import { ActionTypes } from 'reducers/task-reducer';
 import { formateDate } from 'helpers/format-date';
-import { EditTask } from 'components/edit-task';
+import { EditTask } from 'components/edit-task'; 
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {

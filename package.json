@@ -30,6 +30,7 @@
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-transform-imports": "^2.0.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",

@@ -7,6 +7,17 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
+  devtool: false,
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  optimization: {
+    splitChunks: {
+      maxSize: 250000
+    }
+  },
   resolve: {
     modules: [path.resolve(__dirname, './src'), 'node_modules'],
     extensions: ['.ts', '.tsx', '.js']

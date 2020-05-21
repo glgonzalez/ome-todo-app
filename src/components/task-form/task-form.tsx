@@ -1,6 +1,7 @@
 import React, { FC, FormEvent, useState } from 'react';
-import { Button, FormControl, TextField, Theme, createStyles, makeStyles } from '@material-ui/core';
-import { KeyboardDatePicker } from '@material-ui/pickers';
+import { Button, FormControl, TextField, Theme } from '@material-ui/core';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { KeyboardDatePicker } from '@material-ui/pickers/DatePicker';
 import { useTasksContext, Task } from 'contexts/tasks-context';
 import { ActionTypes } from 'reducers/task-reducer';
 
